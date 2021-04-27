@@ -1,0 +1,18 @@
+<div class="container">
+    <table class="table table-striped border mt-1">
+        <thead>
+            <tr>
+                <td>Order</td>
+                <td>Todo</td>
+            </tr>
+        </thead>
+        <tbody cdkDropList (cdkDropListDropped)="onDrop($event)">
+            <tr *ngFor="let item of todolist.data" cdkDrag>         
+                <td>{{item.order}}</td>
+                <td>{{item.todo}}</td>
+            </tr>
+            
+        </tbody>
+       
+    </table>
+</div>

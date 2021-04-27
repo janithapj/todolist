@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="form-group row">
+        <div class="col-sm-6">
+            <label for="addOrder">Order</label>
+            <input (change)="onOrderChange($event)" type="number" class="form-control" id="inputOrder"
+                placeholder="Enter Order" />
+        </div>
+        <div class="col-sm-6">
+            <label for="addTodo">Add Todo</label>
+            <input (change)="onTodoChange($event)" type="text" class="form-control" id="inputTodo"
+                placeholder="Enter Todo" />
+        </div>
+        <div class="col-sm-6">
+            <button type="button" class="btn btn-primary px-4 float-right" (click)="addTodo()">ADD TODO</button>
+
+        </div>
+    </div>
+</div>
